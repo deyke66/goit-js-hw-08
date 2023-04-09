@@ -7,7 +7,6 @@ const refs = {
     textArea: document.querySelector('textarea')
 }
 const STORAGE_KEY = "feedback-form-state";
-console.log(refs)
 
 
 refs.form.addEventListener('input', throttle(onInputsValue, 500));

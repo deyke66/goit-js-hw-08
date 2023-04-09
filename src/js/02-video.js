@@ -15,7 +15,7 @@ const onPlay = function(data) {
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
-player.on('pause', throttle(onPlay, 1000));
+player.on('pause', onPlay);
 
 const currentTimeValue = JSON.parse(localStorage.getItem(TRACKERTIME_KEY)) || 0;
 
